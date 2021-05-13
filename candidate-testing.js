@@ -42,8 +42,9 @@ for (let i = 0; i < candidateAnswers.length; i++){
   }else{
     status = "FAILED";
   }
+  
+  return grade;
 }
-
 
 function runProgram() {
   askForName();
