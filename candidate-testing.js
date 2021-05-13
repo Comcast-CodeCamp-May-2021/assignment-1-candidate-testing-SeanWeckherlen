@@ -17,7 +17,7 @@ let candidateAnswers = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  canidateName = input.question("what is your name ? ");
+  candidateName = input.question("what is your name ? ");
 }
 
 function askQuestion() {
@@ -30,9 +30,9 @@ function askQuestion() {
 
 function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly 
-  let numberOfCorrectAnswer = 0;
-  let status; 
-  let grade; 
+  // let numberOfCorrectAnswer = 0;
+  // let status; 
+  // let grade; 
   for (let i = 0; i < candidateAnswers.length; i++){
   if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
       numberOfCorrectAnswer += 1;
@@ -47,7 +47,7 @@ function gradeQuiz(candidateAnswers) {
   }
  console.log("\n");
   console.log(
-`Candidate Name : ${canidateName}\n
+`Candidate Name : ${candidateName}\n
 1) ${questions[0]} 
 Your Answer: ${candidateAnswers[0]}
 Correct Answer : ${correctAnswers[0]} \n 
