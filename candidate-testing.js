@@ -28,7 +28,7 @@ function askQuestion() {
   }
 }
 
-function gradeQuiz(candidateAnswers) {
+function gradeQuiz() {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly 
 for (let i = 0; i < candidateAnswers.length; i++){
   if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
@@ -52,7 +52,7 @@ function runProgram() {
   console.log(`Welcoome ${canidateName} !`)
   
   askQuestion();
-  gradeQuiz(this.candidateAnswers);
+  gradeQuiz();
   console.log("\n");
   console.log(
 `Candidate Name : ${canidateName}\n
