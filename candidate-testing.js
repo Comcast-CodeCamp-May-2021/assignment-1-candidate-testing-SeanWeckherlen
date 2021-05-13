@@ -31,8 +31,7 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly 
   let numberOfCorrectAnswer = 0;
-  // let status; 
-  // let grade; 
+  
   for (let i = 0; i < candidateAnswers.length; i++){
   if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
       numberOfCorrectAnswer += 1;
@@ -41,7 +40,7 @@ function gradeQuiz(candidateAnswers) {
   grade = (numberOfCorrectAnswer / 5) * 100;
   
   if (grade >= 80){
-    status = "PASS";
+    status = "PASSED";
   }else{
     status = "FAILED";
   }
@@ -66,7 +65,6 @@ Correct Answer : ${correctAnswers[4]}\n
 >>> Overall Grade: ${grade}% (${numberOfCorrectAnswer} of 5 responses correct) <<<
 >>> Status: ${status} <<<
   `);
-
   return grade;
 }
 
