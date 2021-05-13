@@ -13,6 +13,7 @@ let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers = [];
 let numberOfCorrectAnswer = 0;
 let status; 
+let grade; 
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
