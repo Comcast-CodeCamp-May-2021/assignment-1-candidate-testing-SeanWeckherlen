@@ -34,7 +34,7 @@ for (let i = 0; i < candidateAnswers.length; i++){
       numberOfCorrectAnswer += 1;
     }  
   }
-  grade = Number((numberOfCorrectAnswer / 5) * 100);
+  grade = (numberOfCorrectAnswer / 5) * 100;
   
   if (grade >= 80){
     status = "PASS";
@@ -73,7 +73,6 @@ Correct Answer : ${correctAnswers[4]}\n
 >>> Status: ${status} <<<
   `);
 }
-
 
 
 // Don't write any code below this line //
