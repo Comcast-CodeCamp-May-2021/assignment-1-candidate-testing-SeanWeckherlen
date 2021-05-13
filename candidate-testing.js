@@ -8,7 +8,7 @@ let candidateName = '';
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "";
-let questions = ["Who was the first American woman in space? ", "True or false: 5 kilometers == 5000 meters ? ", "(5 + 3)/2 * 10 = ? ", "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", "What is the minimum crew size for the ISS?	 "];
+let questions = ["Who was the first American woman in space? ", "True or false: 5 kilometers == 5000 meters ? ", "(5 + 3)/2 * 10 = ? ", "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", "What is the minimum crew size for the ISS? "];
 let correctAnswers = ["sally ride", "true", "40", "trajectory", "3"];
 let candidateAnswers = [];
 let numberOfCorrectAnswer = 0;
@@ -34,7 +34,7 @@ for (let i = 0; i < candidateAnswers.length; i++){
       numberOfCorrectAnswer += 1;
     }  
   }
-  grade = (numberOfCorrectAnswer / 5) * 100;
+  grade = Number((numberOfCorrectAnswer / 5) * 100);
   
   if (grade >= 80){
     status = "PASS";
